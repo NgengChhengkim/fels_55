@@ -1,0 +1,22 @@
+<% provide :title, "Lessons" %>
+<div class="row">
+  <div class="col-md-8">
+    <div class="title">
+      <h2><%= @lesson.category.name %></h2>
+      <h4 class="count alert alert-info"></h4>
+    </div>
+    <%= form_for [@lesson.category, @lesson] do |f| %>
+      <%= f.fields_for :word_lessons do |ff| %>
+        <div class="word-list">
+          <h3><%= ff.object.word.keyword %></h3>
+          <%= ff.collection_radio_buttons :answer_id, ff.object.word.answers, 
+                                          :id, :meaning do |rb| %>
+            <%= rb.label(class: "radio"){rb.radio_button + rb.text} %>
+          <% end %>
+        </div>
+      <% end %>
+      <%= f.submit t(:lb_submit), class: "btn btn-primary submit-answer" %>
+    <% end %>
+    <%= link_to t(:lb_next), "", class: "btn btn-primary choose" %>
+  </div>
+</div>

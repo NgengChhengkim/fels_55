@@ -1,0 +1,8 @@
+<tr>
+  <td><%= word.keyword %></td>
+  <td><%= link_to t(:lb_view_meanings), [:admin, word] %></td>
+  <td><%= link_to t(:lb_edit), edit_admin_word_path(word) %></td>
+  <td><%= link_to t(:lb_delete), [:admin, word], method: :delete, 
+                  data: {confirm: "Are you sure to delete?"} %>
+  </td>
+</tr>

@@ -1,0 +1,13 @@
+<tr>
+  <td><%= category.name %></td>
+  <td><%= category.description %></td>
+  <td><%= link_to t(:lb_view_words), [:admin, category] %></td>
+  <td><%= link_to t(:lb_edit), edit_admin_category_path(category), remote: true,
+                  "data-toggle" => "modal",
+                  "data-target" => "#form-modal" %>
+  </td>
+  <td><%= link_to t(:lb_delete), [:admin, category], method: :delete, 
+                  data: {confirm: "Are you sure to delete?"}, 
+                  remote: true %>
+  </td>
+</tr>

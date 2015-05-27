@@ -1,0 +1,9 @@
+<div class="form-group">
+  <%= f.label :meaning %>
+  <%= f.text_field :meaning, class: "form-control" %>
+  <%= f.check_box :correct_answer, class: "check" %>
+  <%= f.label :correct_answer, "Correct" %>
+  <div style="float: right;">
+    <%= link_to_remove_fields t(:lb_remove), f %>
+  </div>
+</div>

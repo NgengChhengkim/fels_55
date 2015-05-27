@@ -1,0 +1,22 @@
+<div class="form-edit">
+  <%= form_for @user, remote: true do |f| %>
+    <%= f.label :username %>
+    <%= f.text_field :username, class: "form-control" %>
+    <%= f.label :email %>
+    <%= f.text_field :email, class: "form-control" %>
+    <%= f.label :password %>
+    <%= f.password_field :password, class: "form-control" %>
+    <%= f.label :password_confirmation %>
+    <%= f.password_field :password_confirmation, class: "form-control" %>
+    <%= f.submit t(:lb_save), class: "btn btn-primary" %>
+    <%= link_to t(:lb_cancel), "#", class: "btn btn-primary cancel-btn" %>
+    <%= link_to t(:lb_change_avatar), "http://gravatar.com/emails", class: "btn btn-default", target: "_blank" %>
+  <% end %>
+</div>
+
+<script type="text/javascript">
+  $(".cancel-btn").click(function(){
+    $(".profile-edit-form").html("<%= escape_javascript(link_to t(:lb_edit), edit_user_path(@user), class: 'btn btn-primary', remote: true) %>")
+  $(".errors").html("")
+  });
+</script>

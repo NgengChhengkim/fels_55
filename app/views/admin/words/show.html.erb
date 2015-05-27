@@ -1,0 +1,13 @@
+<% provide :title, "Show Word" %>
+<div class="row">
+  <div class="col-md-6">
+    <div class="panel panel-primary">
+      <div class="panel-heading"><b><%= @word.keyword %></b></div>
+      <div class="panel-body">
+        <p><b>Category: <%= @word.category.name %></b></p>
+        <p><b>Meaning:</b></p>
+        <ol><%= render partial: "answer", collection: @answer %></ol>
+      </div>
+    </div>
+  </div>
+</div>

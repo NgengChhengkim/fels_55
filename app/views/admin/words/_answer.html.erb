@@ -1,0 +1,8 @@
+<li>
+  <%= answer.meaning %>
+  <% if answer.correct_answer? %>
+    <span class="label label-success">Correct</span>
+  <% else %>
+    <span class="label label-danger">Wrong</span>
+  <% end %>
+</li>

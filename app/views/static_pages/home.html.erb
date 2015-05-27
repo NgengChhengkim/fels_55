@@ -1,0 +1,17 @@
+<% provide :title, "Home" %>
+<% if logged_in? %>
+  <div class="row">
+    <div class="col-md-8">
+      <div class="activity">
+        <h3>Activities</h3>
+        <%= render "users/user_activity" %>
+      </div>
+    </div>
+  </div>
+<% else %>
+  <div class="center jumbotron">
+    <h2>Welcome to Framgia E-Learning System</h2>
+    <h4>Signup now to improve your Learning skill</h4>
+    <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
+  </div>
+<% end %>

@@ -1,0 +1,71 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+en:
+  #label:
+    #save: "Save"
+    #edit: "Edit"
+  lb_save: "Save"
+  lb_edit: "Edit Profile"
+  lb_cancel: "Cancel"
+  lb_change_avatar: "Change Avatar"
+  lb_create: "Create Account"
+  lb_login: "Log in"
+  lb_signup: "Sign up"
+  lb_remember: "Remember me on this computer"
+  lb_signup_now: "Sign up now!"
+  lb_logout: "Log out"
+  lb_profile: "Profile"
+  lb_setting: "Setting"
+  lb_submit: "Submit your answer"
+  lb_start: "Start"
+  lb_next: "Next"
+  lb_add_new: "Add New"
+  lb_close: "Close"
+  lb_edit: "Edit"
+  lb_delete: "Delete"
+  lb_add_answer: "Add Answer"
+  lb_add_word: "Add new word"
+  lb_remove: "Remove"
+  lb_view_words: "View word"
+  lb_view_meanings: "View meaning"
+  lb_follow: "Follow"
+  lb_unfollow: "Unfollow"
+  lb_view_profile: "View my profile"
+  lb_all: "All"
+  lb_learn: "Learned"
+  lb_notlearn: "Not Learned"
+  lb_invalid: "Invalid problem occur"
+  radio_bt_all: "all"
+  radio_bt_learn: "learned"
+  radio_bt_notlearn: "not_learned"
+  btn_submit: "Submit"
+  alert_invalid: "Invalid email/password combination"
+  alert_signup_success: "Account sign up successful"
+  alert_success: "Save success"
+  alert_login: "Please log in"
+  alert_delete: "Delete success"
+  menu_home: "Home"
+  menu_users: "Users"
+  menu_wordlist: "Word List"
+  menu_categories: "Categories"
+  menu_result: "Result"
+  menu_admin: "Admin"

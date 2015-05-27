@@ -1,0 +1,9 @@
+<div class="category-list">
+  <h3><%= category.name %></h3>
+  <p><%= category.description %></p>
+
+  <%= form_for [category, category.lessons.build] do |f| %>
+    <%= f.hidden_field :category_id %>
+    <%= f.submit t(:lb_start), class: "btn btn-primary" %>
+  <% end %>
+</div>
